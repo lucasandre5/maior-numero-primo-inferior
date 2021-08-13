@@ -1,6 +1,6 @@
 <?php
 
-function retornaDivisores($num){
+function retornaDivisores(int $num){
 	$divisores = 0;
 
 	for ($i=1; $i <= $num; $i++) { 
@@ -12,7 +12,7 @@ function retornaDivisores($num){
 	return $divisores;
 }
 
-function primoInferior($num){
+function primoInferior(int $num){
 	$result = 0;
 	for ($i=$num-1; $i >= 1; $i--) { 
 		$divisores = retornaDivisores($i);
